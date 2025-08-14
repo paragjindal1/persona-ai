@@ -31,7 +31,7 @@ const App = () => {
       id: 1,
       title: "Hitesh Choudhary",
       description:
-        "Helps with creative writing, brainstorming, and artistic projects",
+        "Educator specializing in programming, tech careers, and mentorship",
       image: hiteshChoudary,
       systemPrompt: systemPrompt.hiteshChoudhary,
       color: "from-purple-500 to-pink-500",
@@ -40,7 +40,7 @@ const App = () => {
       id: 2,
       title: "Piyush Garg",
       description:
-        "Expert in programming, software development, and technical guidance",
+        "Guides in backend, AI , problem-solving, and development",
       image: piyushGarg,
       systemPrompt: systemPrompt.piyushGarg,
       color: "from-blue-500 to-cyan-500",

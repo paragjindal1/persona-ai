@@ -7,10 +7,13 @@ export const useAIStore = create((set) => ({
     setResponse: async (systemPrompt,messages) => {
         try {
             console.log("system prompt - ",systemPrompt,"Messages - ",messages)
-            const response = await axios.post("http://localhost:3000/persona-ai", {
+            const response = await axios.post(
+              `${import.meta.env.BACKEND_URL}/persona-ai`,
+              {
                 systemPrompt,
-                messages
-            });
+                messages,
+              }
+            );
             set({ response: response.data.messages });
         } catch (error) {
             console.error("Error fetching response:", error);
